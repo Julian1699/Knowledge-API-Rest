@@ -5,17 +5,15 @@
 
 Esta API RESTful proporciona una manera de gestionar datos de productos utilizando Spring Boot. Está diseñada para ser utilizada por desarrolladores que necesitan crear, leer, actualizar y eliminar productos.
 
-Características
-
 # La API proporciona las siguientes características:
 
-. Obtener todos los productos: Recupera una lista de todos los productos disponibles en la base de datos.
-. Agregar un nuevo producto: Agrega un nuevo producto a la base de datos.
-. Actualizar un producto existente: Actualiza un producto existente en la base de datos.
-. Eliminar un producto existente: Elimina un producto existente de la base de datos.
-. Obtener un producto por ID: Recupera un producto por su identificador único.
-. Buscar productos: Busca productos por nombre, referencia o categoría.
-. Tecnologías utilizadas
+- Obtener todos los productos: Recupera una lista de todos los productos disponibles en la base de datos.
+- Agregar un nuevo producto: Agrega un nuevo producto a la base de datos.
+- Actualizar un producto existente: Actualiza un producto existente en la base de datos.
+- Eliminar un producto existente: Elimina un producto existente de la base de datos.
+- Obtener un producto por ID: Recupera un producto por su identificador único.
+- Buscar productos: Busca productos por nombre, referencia o categoría.
+- Tecnologías utilizadas
 
 # La API está construida utilizando las siguientes tecnologías:
 
