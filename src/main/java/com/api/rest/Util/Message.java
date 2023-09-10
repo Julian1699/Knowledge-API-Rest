@@ -1,26 +1,24 @@
 package com.api.rest.Util;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 
 /**
- * The Message enumeration defines a series of error messages that can be used throughout the application.
- * Each enumeration element represents a specific error message.
+ * The Message enumeration defines a set of error messages that can be utilized across the application.
+ * Each enum element represents a specific error message.
  *
- * This enumeration is used to standardize error messages and avoid the repetition of magic strings in the code.
+ * This enumeration is employed to standardize error messages and eliminate the repetition of magic strings within the code.
  *
  * @author Julian1699
  * @version 1.0
  */
 @AllArgsConstructor
 public enum Message {
-    PRODUCT_NOT_FOUND("El producto no fue encontrado"),
-    PRODUCT_SAVED("El producto se guardó correctamente"),
-    PRODUCT_UPDATED("El producto fue actualizado"),
-    PRODUCT_DELETED("El producto fue eliminado"),
-    EMPTY("No hay productos disponibles"),
-    BAD_REQUEST("Mala peticion, recuerda: Las peticiones no deben ir vacias o incompletas),");
+    PRODUCT_NOT_FOUND("The product was not found"),
+    PRODUCT_SAVED("The product was saved successfully"),
+    PRODUCT_UPDATED("The product was updated"),
+    PRODUCT_DELETED("The product was deleted"),
+    EMPTY("There are no available products"),
+    BAD_REQUEST("Bad request, remember: Requests must not be empty or incomplete.");
 
     private final String message;
-
 }

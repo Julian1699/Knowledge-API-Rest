@@ -7,10 +7,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 import java.util.Optional;
-
 
 @Service
 @AllArgsConstructor
@@ -18,42 +16,42 @@ import java.util.Optional;
 public class ProductService {
 
     /**
-     * @Dependency-Injection
-     * @Author Julian1
+     * @Dependency-Injection.
+     * @Author Julian1699.
      * @Description Dependency injection of the JPA repository interface.
-     * @JpaRepository Interface
+     * @JpaRepository -> ProductRepository -> ProductService.
      */
     @Autowired
     private final ProductRepository productRepository;
 
     /**
-     * @Method-CREATE
-     * @Author Julian
+     * @Method-CREATE.
+     * @Author Julian1699.
      * @Description This service is used for save objects of product.
      * @param product
-     * @return JpaRepository.save(@Entity)
+     * @return JpaRepository.save(@Entity);
      */
     public Product saveProduct(Product product){
         return productRepository.save(product);
     }
 
     /**
-     * @Method-READ
-     * @Author Julian
+     * @Method-READ.
+     * @Author Julian1699.
      * @Description This service is used for get all objects of product.
-     * @return JpaRepository.findAll()
+     * @return JpaRepository.findAll();
      */
     public List <Product> getProducts (){
         return productRepository.findAll();
     }
 
     /**
-     * @Method-UPDATE
-     * @Author Julian
+     * @Method-UPDATE.
+     * @Author Julian1699.
      * @Description This service is used for update objects of product.
      * @param id
      * @param product
-     * @return JpaRepository.save(@Entity)
+     * @return JpaRepository.save(@Entity);
      */
     public Product updateProduct(Long id, Product product) {
         Optional<Product> optionalProduct = productRepository.findById(id);
@@ -73,10 +71,10 @@ public class ProductService {
     }
 
     /**
-     * @Method-DELETE
-     * @Author Julian
+     * @Method-DELETE.
+     * @Author Julian1699.
      * @Description This service is used for delete objects of product.
-     * @return JpaRepository.save(@Entity)
+     * @return JpaRepository.save(@Entity);
      */
     public void deleteProduct(Long id) {
         Optional<Product> optionalProduct = productRepository.findById(id);
@@ -89,8 +87,8 @@ public class ProductService {
     }
 
     /**
-     * @Method-FIND_BY_ID
-     * @Author Julian
+     * @Method-FIND_BY_ID.
+     * @Author Julian1699.
      * @Description This service is used for find objects of product by ID.
      * @param id
      * @return JpaRepository.findById(id);
@@ -101,11 +99,11 @@ public class ProductService {
     }
 
     /**
-     * @Method-FIND_BY_ID
-     * @Author Julian
+     * @Method-FIND_BY_ID.
+     * @Author Julian1699.
      * @Description This service is used for find objects of product by String.
      * @param search
-     * @return JpaRepository.findAllBySearch(String)
+     * @return JpaRepository.findAllBySearch(String);
      */
     public Product findAllChars(String search){
         List<Product> searchAll = productRepository.findAllBySearch(search);

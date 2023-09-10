@@ -14,8 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.v3.oas.annotations.tags.Tag;
-
-
 import java.util.Collections;
 import java.util.List;
 
@@ -26,6 +24,12 @@ import java.util.List;
 @Tag(name = "API REST", description = "All verbs Http-Rest")
 public class ProductController {
 
+    /**
+     * @Dependency-Injection.
+     * @Author Julian1699.
+     * @Description Dependency injection of the ProductService.
+     * @JpaRepository -> ProductRepository -> ProductService -> ProductController.
+     */
     @Autowired
     private final ProductService productService;
 
