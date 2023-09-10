@@ -1,38 +1,39 @@
 # Api-Rest-Intermedian
 | API REST |  SpringBoot | PostgreSQL | JPA | Swagger |
 
-API de Productos - Controlador REST de Spring Boot
-Versión de Java
-Versión de Spring Boot
-Licencia
+API de Productos
+Esta API RESTful proporciona una manera de gestionar datos de productos utilizando Spring Boot. Está diseñada para ser utilizada por desarrolladores que necesitan crear, leer, actualizar y eliminar productos.
 
-Este repositorio contiene la API RESTful para gestionar datos de productos utilizando Spring Boot. La clase ProductController sirve como punto de entrada para varias operaciones relacionadas con productos. Esta API proporciona puntos finales para realizar operaciones comunes de CRUD (Crear, Leer, Actualizar, Eliminar) en registros de productos almacenados en una base de datos.
+Características
+La API proporciona las siguientes características:
 
-Características:
+Obtener todos los productos: Recupera una lista de todos los productos disponibles en la base de datos.
+Agregar un nuevo producto: Agrega un nuevo producto a la base de datos.
+Actualizar un producto existente: Actualiza un producto existente en la base de datos.
+Eliminar un producto existente: Elimina un producto existente de la base de datos.
+Obtener un producto por ID: Recupera un producto por su identificador único.
+Buscar productos: Busca productos por nombre, referencia o categoría.
+Tecnologías utilizadas
+La API está construida utilizando las siguientes tecnologías:
 
-Obtener Todos los Productos: Recupera una lista de todos los productos disponibles en la base de datos.
-Agregar un Nuevo Producto: Agrega un nuevo producto a la base de datos.
-Actualizar un Producto Existente: Actualiza un producto existente en la base de datos.
-Eliminar un Producto Existente: Elimina un producto existente de la base de datos.
-Obtener Producto por ID: Recupera un producto por su identificador único.
-Buscar Productos: Busca productos por nombre, referencia o categoría.
-Tecnologías Utilizadas
-Spring Boot: Un potente marco de trabajo para construir aplicaciones web basadas en Java.
+Java 17: La versión de Java.
+Spring Boot 3.0.10: Un potente marco de trabajo para construir aplicaciones web basadas en Java.
 Spring Data JPA: Simplifica el acceso y la gestión de bases de datos.
 Swagger: Proporciona documentación interactiva de la API.
 Hibernate Validator: Para la validación de los datos enviados en las solicitudes.
 Lombok: Reduce el código repetitivo.
 Cross-Origin Resource Sharing (CORS): Permite solicitudes entre dominios desde aplicaciones web.
-Documentación de la API
+Documentación
+La documentación de la API está disponible en Swagger: https://localhost:8080/swagger-ui.html.
 
-Puede explorar y probar la API utilizando la documentación de Swagger navegando a la siguiente URL después de ejecutar la aplicación:
+Endpoints
+Los endpoints de la API son los siguientes:
 
-http://localhost:8080/swagger-ui.html
+GET /api/v1/product/all: Obtiene todos los productos.
+POST /api/v1/product/post: Agrega un nuevo producto.
+PUT /api/v1/product/put/{id}: Actualiza un producto existente.
+DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
+GET /api/v1/product/id/{id}: Obtiene un producto por ID.
+GET /api/v1/product/search/{search}: Busca productos por nombre, referencia o categoría.
 
-END POINTS de la API
-GET /api/v1/product/all: Obtener todos los productos.
-POST /api/v1/product/post: Agregar un nuevo producto.
-PUT /api/v1/product/put/{id}: Actualizar un producto existente.
-DELETE /api/v1/product/delete/{id}: Eliminar un producto existente.
-GET /api/v1/product/id/{id}: Obtener un producto por ID.
-GET /api/v1/product/search/{search}: Buscar productos.
+
