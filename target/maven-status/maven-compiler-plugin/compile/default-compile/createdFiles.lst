@@ -1,0 +1,6 @@
+com\api\rest\RestApplication.class
+com\api\rest\Repository\ProductRepository.class
+com\api\rest\Service\ProductService.class
+com\api\rest\Controller\ProductController.class
+com\api\rest\Domain\Product.class
+com\api\rest\Util\Message.class
