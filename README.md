@@ -1,6 +1,12 @@
 # Api-Rest-Intermedian
 
-| API REST | SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
+| API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
+
+# Configuración de la Base de Datos:
+
+Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado PostgreSQL como gestor de base de datos, pero el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL y Oracle SQL, ya que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
+
+![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/74cfaa72-1133-46e3-9edd-fc57af78a667)
 
 # API de Productos
 
@@ -28,17 +34,19 @@ Esta API RESTful proporciona una manera de gestionar datos de productos utilizan
 
 # Documentación
 
-La documentación de la API está disponible en Swagger: https://localhost:8080/swagger-ui.html.
+La documentación de la API está disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/
+
+![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/2cfe3ae7-b943-49fa-8749-b208f9501bf5)
 
 # Endpoints
 
 Los endpoints de la API son los siguientes:
 
-- GET /api/v1/product/all: Obtiene todos los productos.
-- POST /api/v1/product/post: Agrega un nuevo producto.
 - PUT /api/v1/product/put/{id}: Actualiza un producto existente.
-- DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
-- GET /api/v1/product/id/{id}: Obtiene un producto por ID.
+- POST /api/v1/product/post: Agrega un nuevo producto.
 - GET /api/v1/product/search/{search}: Busca productos por nombre, referencia o categoría.
+- GET /api/v1/product/id/{id}: Obtiene un producto por ID.
+- GET /api/v1/product/all: Obtiene todos los productos.
+- DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
 
 
