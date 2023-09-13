@@ -1,5 +1,6 @@
 # Api-Rest-Intermedian
-| API REST |  SpringBoot | PostgreSQL | JPA | Swagger |
+
+| API REST | SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
 
 # API de Productos
 
