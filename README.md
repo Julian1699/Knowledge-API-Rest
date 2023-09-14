@@ -14,21 +14,21 @@ En este proyecto de Spring Security, se han creado dos usuarios en la memoria qu
 
 - Primer Usuario (admin):
 
-Nombre de usuario: admin.
+-Nombre de usuario: admin.
 
-Contraseña: admin.
+-Contraseña: admin.
 
-Rol: ADMIN.
+-Rol: ADMIN.
 
 Este usuario tiene permisos para realizar todas las operaciones HTTP (GET, POST, PUT, DELETE) de manera normal.
 
 - Segundo Usuario (customer):
 
-Nombre de usuario: customer.
+-Nombre de usuario: customer.
 
-Rol: CUSTOMER.
+-Rol: CUSTOMER.
 
-Contraseña: customer.
+-Contraseña: customer.
 
 El usuario "customer" tiene autorización solamente para realizar consultas a la base de datos utilizando el verbo HTTP GET.
 
