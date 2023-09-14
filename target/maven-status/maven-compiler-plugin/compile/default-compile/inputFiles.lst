@@ -3,4 +3,6 @@ C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\mai
 C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Controller\ProductController.java
 C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Domain\Product.java
 C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Service\ProductService.java
+C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Config\CorsConfig.java
+C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Config\SecurityConfig.java
 C:\Users\julia\Desktop\PROYECTOS DE GIT-HUB\Tiendas\Api-Rest-Intermedian\src\main\java\com\api\rest\Repository\ProductRepository.java
