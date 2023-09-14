@@ -8,6 +8,32 @@ Antes de ejecutar la API sin problemas, es importante configurar la base de dato
 
 ![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/74cfaa72-1133-46e3-9edd-fc57af78a667)
 
+# Configuración de Seguridad:
+
+En este proyecto de Spring Security, se han creado dos usuarios en la memoria que requieren autenticación y tienen diferentes niveles de autorización.
+
+- Primer Usuario (admin):
+
+Nombre de usuario: admin
+Contraseña: admin
+Rol: ADMIN
+Este usuario tiene permisos para realizar todas las operaciones HTTP (GET, POST, PUT, DELETE) de manera normal.
+
+- Segundo Usuario (customer):
+
+Nombre de usuario: customer
+Rol: CUSTOMER
+Contraseña: customer
+El usuario "customer" tiene autorización solamente para realizar consultas a la base de datos utilizando el verbo HTTP GET.
+
+A continuación, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Postman:
+
+![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/7a47bceb-4a01-4081-8dbe-f900ed929fbb)
+
+También, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Swagger:
+
+![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/525e1c06-9f9c-4af0-b270-80cfee58f8d0)
+
 # API de Productos
 
 Esta API RESTful proporciona una manera de gestionar datos de productos utilizando Spring Boot. Está diseñada para ser utilizada por desarrolladores que necesitan crear, leer, actualizar y eliminar productos.
