@@ -2,11 +2,16 @@
 
 | API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
 
-# Configuración de la Base de Datos:
+# DOCKER
 
-Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado PostgreSQL como gestor de base de datos, pero el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL y Oracle SQL, ya que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
+Como el api se encuentra dockerizada es necesario:
 
-![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/74cfaa72-1133-46e3-9edd-fc57af78a667)
+1) Clonar el repositorio especifico de la rama main-security-in-memory-dockerized, se puede realizar con la siguiente linea de comandos:
+   - $ git clone -b main-security-in-memory-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
+2) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
+3) Ejecutar el comando de docker
+   - $ docker compose up
+4) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 # Configuración de Seguridad:
 
