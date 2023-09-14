@@ -32,6 +32,8 @@ Este usuario tiene permisos para realizar todas las operaciones HTTP (GET, POST,
 
 El usuario "customer" tiene autorización solamente para realizar consultas a la base de datos utilizando el verbo HTTP GET.
 
+# Ejemplos:
+
 A continuación, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Postman:
 
 ![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/7a47bceb-4a01-4081-8dbe-f900ed929fbb)
