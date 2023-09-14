@@ -15,15 +15,21 @@ En este proyecto de Spring Security, se han creado dos usuarios en la memoria qu
 - Primer Usuario (admin):
 
 Nombre de usuario: admin.
+
 Contraseña: admin.
+
 Rol: ADMIN.
+
 Este usuario tiene permisos para realizar todas las operaciones HTTP (GET, POST, PUT, DELETE) de manera normal.
 
 - Segundo Usuario (customer):
 
 Nombre de usuario: customer.
+
 Rol: CUSTOMER.
+
 Contraseña: customer.
+
 El usuario "customer" tiene autorización solamente para realizar consultas a la base de datos utilizando el verbo HTTP GET.
 
 A continuación, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Postman:
