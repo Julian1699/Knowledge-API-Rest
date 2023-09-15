@@ -1,6 +1,6 @@
-package com.api.rest.Repository;
+package com.api.rest.repository;
 
-import com.api.rest.Domain.Product;
+import com.api.rest.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,4 +1,4 @@
-package com.api.rest.Domain;
+package com.api.rest.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;

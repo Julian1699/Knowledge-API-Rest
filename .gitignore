@@ -4,6 +4,8 @@ HELP.md
 !**/src/test/**/target/
 
 ### Docker ###
+dockerfile
+docker-compose.yml
 
 ### STS ###
 .apt_generated

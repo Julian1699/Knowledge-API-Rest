@@ -1,8 +1,8 @@
-package com.api.rest.Controller;
+package com.api.rest.controller;
 
-import com.api.rest.Domain.Product;
-import com.api.rest.Service.ProductService;
-import com.api.rest.Util.Message;
+import com.api.rest.domain.Product;
+import com.api.rest.service.ProductService;
+import com.api.rest.util.Message;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

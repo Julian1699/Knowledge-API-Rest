@@ -1,4 +1,4 @@
-package com.api.rest.Util;
+package com.api.rest.util;
 
 import lombok.AllArgsConstructor;
 

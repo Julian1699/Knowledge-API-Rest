@@ -1,7 +1,7 @@
-package com.api.rest.Service;
+package com.api.rest.service;
 
-import com.api.rest.Domain.Product;
-import com.api.rest.Repository.ProductRepository;
+import com.api.rest.domain.Product;
+import com.api.rest.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

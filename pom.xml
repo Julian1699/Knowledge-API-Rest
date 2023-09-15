@@ -80,6 +80,13 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- } Dependecies for use Spring Security-->
+		<!--Dependecies for use jwt{ -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>4.3.0</version>
+		</dependency>
+		<!-- } Dependecies for use jwt -->
 	</dependencies>
 
 	<build>
