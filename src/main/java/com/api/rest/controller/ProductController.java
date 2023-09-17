@@ -4,8 +4,12 @@ import com.api.rest.domain.Product;
 import com.api.rest.service.ProductService;
 import com.api.rest.util.Message;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +25,14 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/product")
 @AllArgsConstructor
+@SecurityScheme(name = "Bearer Auth",
+                description = "JWT auth description",
+                scheme = "Bearer",
+                type = SecuritySchemeType.HTTP,
+                bearerFormat = "JWT",
+                in = SecuritySchemeIn.HEADER
+)
+@SecurityRequirement(name = "Bearer Auth")
 @Tag(name = "API REST", description = "All verbs Http-Rest")
 public class ProductController {
 
