@@ -87,6 +87,10 @@
 			<version>4.3.0</version>
 		</dependency>
 		<!-- } Dependecies for use jwt -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
