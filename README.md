@@ -28,6 +28,9 @@ Como el api se encuentra dockerizada es necesario:
 
    - $ psql -U postgres -d tryapi
      
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/ca3998f3-1e02-4788-9349-79e602049a96)
+
+     
 7) El archivo 'data.sql' en el directorio 'resources' contiene los datos que deben ser copiados e insertados en la base de datos 'tryapi' para su uso posterior.
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/3b51e45e-760c-434d-9925-7c60a4915f2e)
