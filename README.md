@@ -1,6 +1,6 @@
 # Api-Rest-For-Learning
 
-| API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
+| API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger | JWT | Docker |
 
 # DOCKER
 
