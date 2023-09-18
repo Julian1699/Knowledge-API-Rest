@@ -16,7 +16,7 @@ public class JwtUtil {
                 .withSubject(username)
                 .withIssuer("admin")
                 .withIssuedAt(new Date())
-                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(15)))
+                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(1)))
                 .sign(ALGORITHM);
     }
     public boolean isValid(String jwt) {
