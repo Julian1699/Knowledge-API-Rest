@@ -39,11 +39,11 @@ Como el api se encuentra dockerizada es necesario:
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/32dbfb54-2ff4-4009-9f84-a252fd8181e3)
 
-9) Ahora se debe realizar la autenticacion de el usuario "admin" o "customer", realizandolo de la siguiente manera en el swagger
+9) Ahora se debe realizar la autenticacion de el usuario "admin" o "customer", así en el swagger:
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/5542cb45-f9aa-4bb1-a92c-15e4884faa35)
 
-10) Ahora se debe tomar el token BEARER que se genera por las credenciales empleadas, para ser utlizado se la sguiente manera en el paso 11:
+10) Ahora se debe tomar el token BEARER que se genera por las credenciales empleadas, para ser utilizado de la siguiente manera en el paso 11:
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/884dee5c-af8d-40c7-8832-b0860e786669)
 
