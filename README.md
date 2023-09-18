@@ -47,7 +47,7 @@ Como el api se encuentra dockerizada es necesario:
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/884dee5c-af8d-40c7-8832-b0860e786669)
 
-11) En el botÓn "Authorize".
+11) En el botón "Authorize".
 
 ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/837c7d3e-416c-4f96-94cc-84e239239c1f)
 
@@ -67,7 +67,7 @@ Como el api se encuentra dockerizada es necesario:
 
 # Configuración de Seguridad:
 
-En este proyecto de Spring Security, se han creado dos usuarios en la memoria que requieren autenticación y tienen diferentes niveles de autorización.
+En este proyecto de Spring Security, se han creado dos usuarios en la base de datos postgres que requieren autenticación y tienen diferentes niveles de autorización.
 
 - Primer Usuario (admin):
 
