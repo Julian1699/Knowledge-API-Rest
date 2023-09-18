@@ -6,12 +6,61 @@
 
 Como el api se encuentra dockerizada es necesario:
 
-1) Clonar el repositorio especifico de la rama main-security-in-memory-dockerized, se puede realizar con la siguiente linea de comandos:
-   - $ git clone -b main-security-in-memory-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
-2) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
+1) Clona el repositorio específico de la rama 'main-security-in-memory-dockerized' con el siguiente comando:
+   
+   - $ git clone -b main-security-in-database-jwt-dockerized https://github.com/Julian1699/Api-Rest-For-Learning.git
+     
+2) Una vez que se haya clonado el repositorio, se debe abrir una terminal de Git Bash en el directorio que contiene el proyecto.
+   
 3) Ejecutar el comando de docker
+   
    - $ docker compose up
-4) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
+     
+4) Luego de ejecutar el comando anterior y haber iniciado los dos contenedores, se debe abrir otra terminal de Git Bash.
+   
+5) En esta nueva terminal, se debe ingresar al contenedor que contiene la base de datos PostgreSQL con el siguiente comando:
+   
+   - $ winpty docker exec -it db-postgres bash
+     
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/6b57772e-2eb3-4d37-87c9-48ed3255844a)
+
+6) A continuación, se debe ejecutar el siguiente comando para conectarse a la base de datos:
+
+   - $ psql -U postgres -d tryapi
+     
+7) El archivo 'data.sql' en el directorio 'resources' contiene los datos que deben ser copiados e insertados en la base de datos 'tryapi' para su uso posterior.
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/3b51e45e-760c-434d-9925-7c60a4915f2e)
+
+8) Los datos deben ser pegados y a su vez insertados en la base de datos llamada tryapi, para su posterior utilización:
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/32dbfb54-2ff4-4009-9f84-a252fd8181e3)
+
+9) Ahora se debe realizar la autenticacion de el usuario "admin" o "customer", realizandolo de la siguiente manera en el swagger
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/5542cb45-f9aa-4bb1-a92c-15e4884faa35)
+
+10) Ahora se debe tomar el token BEARER que se genera por las credenciales empleadas, para ser utlizado se la sguiente manera en el paso 11:
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/884dee5c-af8d-40c7-8832-b0860e786669)
+
+11) En el botÓn "Authorize".
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/837c7d3e-416c-4f96-94cc-84e239239c1f)
+
+12) Debes introducir el token BEARER para que con cada petición HTTP se cargue y envíe junto con el JWT.
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/184006bb-bd90-4cee-9391-d171df1ca37d)
+
+13) Después de haber presionado el botón "Authorize", procede a cerrar la ventana.
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/03902023-2066-4c8f-beda-d28e951028c3)
+
+14) De esta manera, cada petición estará acompañada por el token BEARER y podrás consumir todos los endpoints que hayas autorizado para el usuario que generó el token.
+    
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/1d464da3-cf13-4198-b520-598a7ce66767)
+
+15) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 # Configuración de Seguridad:
 
@@ -36,16 +85,6 @@ Este usuario tiene permisos para realizar todas las operaciones HTTP (GET, POST,
 -Contraseña: customer.
 
 El usuario "customer" tiene autorización solamente para realizar consultas a la base de datos utilizando el verbo HTTP GET.
-
-# Ejemplos:
-
-A continuación, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Postman:
-
-![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/7a47bceb-4a01-4081-8dbe-f900ed929fbb)
-
-También, se proporciona un ejemplo de cómo llevar a cabo la autenticación en Swagger:
-
-![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/525e1c06-9f9c-4af0-b270-80cfee58f8d0)
 
 # API de Productos
 
@@ -75,7 +114,7 @@ Esta API RESTful proporciona una manera de gestionar datos de productos utilizan
 
 La documentación de la API está disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/
 
-![image](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/2cfe3ae7-b943-49fa-8749-b208f9501bf5)
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/fa586660-642d-4e80-a1ea-9b59711c17db)
 
 # Endpoints
 
