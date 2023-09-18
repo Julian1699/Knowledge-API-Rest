@@ -4,8 +4,6 @@
 
 # DOCKER
 
-![Docker-logo](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/7a639556-3a78-4eee-a953-6e547ed41a78)
-
 Como el api se encuentra dockerizada es necesario:
 
 1) Clona el repositorio específico de la rama 'main-security-in-memory-dockerized' con el siguiente comando:
