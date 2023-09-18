@@ -21,14 +21,14 @@ Como el api se encuentra dockerizada es necesario:
 5) En esta nueva terminal, se debe ingresar al contenedor que contiene la base de datos PostgreSQL con el siguiente comando:
    
    - $ winpty docker exec -it db-postgres bash
-     
-   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/6b57772e-2eb3-4d37-87c9-48ed3255844a)
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/6b57772e-2eb3-4d37-87c9-48ed3255844a)
 
 6) A continuación, se debe ejecutar el siguiente comando para conectarse a la base de datos:
 
    - $ psql -U postgres -d tryapi
-     
-   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/ca3998f3-1e02-4788-9349-79e602049a96)
+
+![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/ca3998f3-1e02-4788-9349-79e602049a96)
 
      
 7) El archivo 'data.sql' en el directorio 'resources' contiene los datos que deben ser copiados e insertados en la base de datos 'tryapi' para su uso posterior.
