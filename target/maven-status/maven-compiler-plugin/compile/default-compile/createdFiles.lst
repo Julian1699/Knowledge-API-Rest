@@ -1,6 +1,10 @@
 com\api\rest\RestApplication.class
+com\api\rest\dto\LoginDto.class
+com\api\rest\controller\AuthController.class
 com\api\rest\domain\Product.class
 com\api\rest\service\ProductService.class
+com\api\rest\config\JwtFilter.class
+com\api\rest\config\JwtUtil.class
 com\api\rest\util\Message.class
 com\api\rest\config\SecurityConfig.class
 com\api\rest\domain\User.class
