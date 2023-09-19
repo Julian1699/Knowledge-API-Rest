@@ -4,7 +4,7 @@
 
 ![Spring+Postgres+Docker+Security+JWT+Docker](https://github.com/Julian1699/Knowledge-API-Rest/assets/114323630/7009b112-1b1a-4100-90db-85cb3b66fa15)
 
-                                          # DOCKER
+# DOCKER
 
 Como el api se encuentra dockerizada es necesario:
 
